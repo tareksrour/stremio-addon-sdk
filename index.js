@@ -144,6 +144,10 @@ module.exports = function Addon(manifest) {
 		return addonHTTP
 	}
 
+	this.getApp = function() {
+		return addonHTTPApp
+	}
+	
 	this.publishToCentral = function(addonURL, apiURL) {
 		return publishToCentral(addonURL, apiURL)
 	}
